@@ -1,28 +1,43 @@
-/* 3. 제목(h1)에 색상과 글꼴 크기 */
+/* 1. 페이지 배경 */
+html {
+  background: #eef1f5;
+}
+
+/* 2. 본문을 흰 카드로 (박스 모델: padding, margin) */
+body {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 32px 36px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+  color: #222222;
+}
+
+/* 3. 제목(h1) 색상과 글꼴 크기 */
 h1 {
-  color: #0EA5C4;
-  font-size: 32px;
+  color: #c0392b;
+  font-size: 2.5rem;
 }
 
-/* 4. 본문에 padding과 배경색 → 카드 */
-.card {
-  background: #F1F5FB;
-  padding: 20px 24px;
-  border: 1px solid #D9E1EE;
-  border-radius: 12px;
-  margin-bottom: 20px;
-}
-
-/* 5. 좋아하는 것 목록을 Flexbox로 가로 정렬 */
+/* 4. 좋아하는 것 목록을 Flexbox로 가로 정렬 */
 .likes {
   display: flex;
+  justify-content: center;
   gap: 12px;
   list-style: none;
   padding: 0;
 }
 .likes li {
-  background: #0F1B33;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
+  background: #ffe08a;
+  padding: 8px 18px;
+  border-radius: 999px;
 }
+
+/* 5. 링크, 이미지, 표 */
+a { color: #1a5fb4; }
+img { border-radius: 8px; }
+table { border-collapse: collapse; }
+th, td { border: 1px solid #cccccc; padding: 6px 14px; }
