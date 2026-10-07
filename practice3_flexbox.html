@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>실습3 - Flexbox</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid #D9E1EE; padding: 16px; margin-bottom: 14px;
+  }
+  .item { background: #0EA5C4; color: #fff; padding: 10px 16px; border-radius: 6px; }
+  .between { justify-content: space-between; }
+  .tall { height: 120px; align-items: center; }
+  h3 { font-size: 15px; margin: 6px 0; }
+</style>
+</head>
+<body>
+  <h3>justify-content: center</h3>
+  <div class="container"><div class="item">박스1</div><div class="item">박스2</div><div class="item">박스3</div></div>
+  <h3>justify-content: space-between</h3>
+  <div class="container between"><div class="item">박스1</div><div class="item">박스2</div><div class="item">박스3</div></div>
+  <h3>align-items: center (세로 가운데)</h3>
+  <div class="container tall"><div class="item">박스1</div><div class="item">박스2</div><div class="item">박스3</div></div>
+</body>
+</html>
